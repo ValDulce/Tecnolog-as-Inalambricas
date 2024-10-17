@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Decaimiento de Señal</title>
+</head>
+<body>
+    <h2>Modelo de Decaimiento de Señal</h2>
+
+    <label>Potencia Inicial (mW): </label>
+    <input type="number" id="potenciaInicial" step="0.1"><br><br>
+
+    <label>Distancia (metros): </label>
+    <input type="number" id="distancia" step="0.1"><br><br>
+
+    <label>Número de cristales: </label>
+    <input type="number" id="numCristales"><br><br>
+
+    <button onclick="calcularDecaimiento()">Calcular Decaimiento</button>
+
+    <h3>Resultados:</h3>
+    <div id="resultado"></div> <!-- Usamos un div para mostrar la lista de resultados -->
+
+    <script>
+        function calcularDecaimiento() {
+            let potenciaInicial = parseFloat(document.getElementById("potenciaInicial").value);
+            let distancia = parseInt(document.getElementById("distancia").value);
+            let numCristales = parseInt(document.getElementById("numCristales").value);
+            
+            let exponentePerdida = 2;
+            let reduccionCristal = 0.9;
+            let resultadosHTML = "";
+
+            // Iterar por cada metro de la distancia
+            for (let metro = 1; metro <= distancia; metro++) {
+                let potenciaDistancia = potenciaInicial * Math.pow(1 / metro, exponentePerdida);
+                
+                // Calcular la reducción de potencia por cristales considerando el número de cristales proporcionalmente en cada metro
+                let potenciaFinal = potenciaDistancia * Math.pow(reduccionCristal, numCristales * (metro / distancia));
+                
+                // Añadir el resultado de cada metro al HTML
+                resultadosHTML += "<p>Metro " + metro + ": " + potenciaFinal.toFixed(2) + " mW</p>";
+            }
+
+            document.getElementById("resultado").innerHTML = resultadosHTML;
+        }
+    </script>
+</body>
+</html>
