@@ -1,0 +1,10 @@
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\bin\Debug\P_unidad3.exe.config
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\bin\Debug\P_unidad3.exe
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\bin\Debug\P_unidad3.pdb
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.csproj.AssemblyReference.cache
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.Form1.resources
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.Properties.Resources.resources
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.csproj.GenerateResource.cache
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.csproj.CoreCompileInputs.cache
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.exe
+C:\Users\sayra\source\repos\P_unidad3\P_unidad3\obj\Debug\P_unidad3.pdb
